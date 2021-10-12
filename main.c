@@ -16,6 +16,8 @@
 
 #include "lv_drivers/wayland/wayland.h"
 
+#include "lvgl/examples/lv_examples.h"
+
 /**********************
  *  STATIC PROTOTYPES
  **********************/
