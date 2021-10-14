@@ -4,8 +4,6 @@
 #define _DEFAULT_SOURCE /* needed for usleep() */
 #include <stdlib.h>
 #include <unistd.h>
-#define SDL_MAIN_HANDLED /*To fix SDL's "undefined reference to WinMain" issue*/
-#include <SDL2/SDL.h>
 
 #include "lvgl/lvgl.h"
 #include "lv_drivers/display/monitor.h"
@@ -115,7 +113,6 @@ static int tick_thread(void *data) {
     (void)data;
 
     while(1) {
-        SDL_Delay(5);
         lv_tick_inc(5); /*Tell LittelvGL that 5 milliseconds were elapsed*/
     }
 

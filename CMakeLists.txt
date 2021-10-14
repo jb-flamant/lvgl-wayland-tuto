@@ -13,9 +13,6 @@ file(GLOB_RECURSE SOURCES  "lv_drivers/*.c" "lvgl/*.c" )
 
 SET(CMAKE_CXX_FLAGS "-O3")
 
-find_package(SDL2 REQUIRED SDL2)
-include_directories(${SDL2_INCLUDE_DIRS})
-
 add_executable(lvgl_wayland_tuto main.c ${SOURCES} ${INCLUDES})
 add_compile_definitions(LV_CONF_INCLUDE_SIMPLE)
-target_link_libraries(lvgl_wayland_tuto PRIVATE SDL2 ${GCC_WAYLAND_LINK_FLAGS})
+target_link_libraries(lvgl_wayland_tuto PRIVATE ${GCC_WAYLAND_LINK_FLAGS})
