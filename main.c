@@ -15,6 +15,8 @@
 
 #include "lv_drivers/wayland/wayland.h"
 
+#include "lvgl/examples/lv_examples.h"
+
 /**********************
  *  STATIC PROTOTYPES
  **********************/
@@ -36,7 +38,7 @@ int main(int argc, char **argv)
 
     pthread_create( &thread1, NULL, tick_thread,NULL);
 
-//    lv_example_get_started_1();
+    lv_example_get_started_1();
 
     while(1) {
         /* Periodically call the lv_task handler.
