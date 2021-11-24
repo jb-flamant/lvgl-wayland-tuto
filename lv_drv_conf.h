@@ -148,6 +148,21 @@
 #  define WAYLAND_SURF_TITLE   "LVGL"
 #endif
 
+#if USE_WAYLAND
+/* Support for client-side decorations */
+#  ifndef LV_WAYLAND_CLIENT_SIDE_DECORATIONS
+#    define LV_WAYLAND_CLIENT_SIDE_DECORATIONS 1
+#  endif
+/* Support for (deprecated) wl-shell protocol */
+#  ifndef LV_WAYLAND_WL_SHELL
+#    define LV_WAYLAND_WL_SHELL 0
+#  endif
+/* Support for xdg-shell protocol */
+#  ifndef LV_WAYLAND_XDG_SHELL
+#    define LV_WAYLAND_XDG_SHELL 1
+#  endif
+#endif
+
 /*----------------
  *    SSD1963
  *--------------*/
