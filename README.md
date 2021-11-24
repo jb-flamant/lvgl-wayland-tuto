@@ -1,7 +1,7 @@
 # lvgl-wayland-tuto
 This is a tutorial to use lvgl with wayland
 
-## Getting started
+## Getting started
 
 - Clone the project
 - git submodule init
